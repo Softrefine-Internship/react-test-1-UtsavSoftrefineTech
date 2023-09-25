@@ -1,0 +1,82 @@
+.project {
+  grid-row: 2 / -1;
+  grid-column: 2 / -1;
+  background-color: FAFAFA;
+
+  // Header
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin: 1rem 0;
+  }
+
+  // Time
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+
+    &__text {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #6f6f6f;
+    }
+
+    &__icon {
+      font-size: 1.5rem;
+      color: #6f6f6f;
+    }
+  }
+
+  // Features
+  &__features {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 2rem;
+
+    &__feature {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        color: #4d4d4d;
+
+        background-color: #e8e8e8;
+      }
+
+      &--active {
+        background-color: #e8e8e8;
+      }
+
+      &__icon {
+        font-size: 1.5rem;
+        color: #6f6f6f;
+      }
+
+      &__text {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #6f6f6f;
+      }
+
+      &__notification {
+        background-color: red;
+        color: white;
+        font-weight: 500;
+        padding: 0.1rem 0.3rem;
+        border-radius: 50%;
+        margin-left: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+      }
+    }
+  }
+}

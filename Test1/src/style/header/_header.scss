@@ -1,0 +1,94 @@
+.header {
+  grid-column: 2 / -1;
+  // background-color: rgba(0, 0, 0, 0.162);
+  background-color: #fafafa;
+
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+
+  border-bottom: 2px solid rgba(211, 211, 211, 0.402);
+
+  // Date
+  &__date {
+    font-size: 1.8rem;
+    color: #616161;
+
+    margin-right: auto;
+  }
+
+  // SEARCH
+  &__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__input {
+      width: 100%;
+      border: 1px solid #b1b0b1;
+      color: #b1b0b1;
+      padding: 1rem 4rem;
+      border-radius: 10rem;
+      transition: all 0.4s;
+      background-color: #fbfafb;
+      font-size: 1.2rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__icon {
+      z-index: 1;
+      position: absolute;
+      margin-left: 1.4rem;
+      margin-top: 0.5rem;
+      font-size: 1.6rem;
+      color: #b1b0b1;
+    }
+  }
+
+  // Icon Button
+  &__iconBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: #000000a7;
+    transition: all 0.4s;
+    border: 1px solid #b1b0b1;
+    border-radius: 50%;
+
+    &:hover {
+      color: #000;
+      cursor: pointer;
+    }
+  }
+
+  // Avatar
+
+  &__avatar img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  // Profile Name
+
+  &__profileName {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #363636;
+  }
+}
