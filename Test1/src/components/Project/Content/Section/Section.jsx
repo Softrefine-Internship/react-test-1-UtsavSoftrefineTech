@@ -33,6 +33,33 @@ const Section = (props) => {
           </div>
         ))}
       </div>
+
+      <style>
+        {`
+          @media screen and (max-width: 700px) {
+            .project__content {
+              grid-template-columns: repeat(${sectionCount}, 31%) !important;
+            }
+          }
+          @media screen and (max-width: 540px) {
+            .project__content {
+              grid-template-columns: repeat(${sectionCount}, 35%) !important;
+            }
+          }
+          @media screen and (max-width: 440px) {
+            .project__content {
+              grid-template-columns: repeat(${sectionCount}, 43%) !important;
+            }
+          }
+
+          @media screen and (max-width: 375px) {
+            .project__content {
+              grid-template-columns: repeat(${sectionCount}, 53%) !important;
+            }
+          }
+
+        `}
+      </style>
     </>
   );
 };
