@@ -28,9 +28,13 @@ const Card = (props) => {
                 <ion-icon name="ellipsis-vertical-outline"></ion-icon>
               </div>
             </div>
-            {isBlurred && (
+            {isBlurred ? (
               <div className="project__content__card__title">
                 <s>{data.title}</s>
+              </div>
+            ) : (
+              <div className="project__content__card__title">
+                <p>{data.title}</p>
               </div>
             )}
 

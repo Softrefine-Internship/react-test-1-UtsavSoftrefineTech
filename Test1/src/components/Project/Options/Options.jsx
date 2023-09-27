@@ -12,7 +12,7 @@ const tabs = [
   "More..",
 ];
 
-const Options = (props) => {
+const Options = () => {
   return (
     <>
       <div className="project__options">

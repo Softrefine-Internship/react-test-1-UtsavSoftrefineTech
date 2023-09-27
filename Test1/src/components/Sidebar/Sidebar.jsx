@@ -25,12 +25,12 @@ const projectData = [
   {
     title: "Mercedes project",
     images: [
+      "https://images.pexels.com/photos/7533347/pexels-photo-7533347.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/2853592/pexels-photo-2853592.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1674666/pexels-photo-1674666.jpeg?auto=compress&cs=tinysrgb&w=600",
       "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600",
     ],
     types: [
       { name: "Landing page", color: "#6f6f6f", icon: "" },
@@ -44,12 +44,12 @@ const projectData = [
   {
     title: "Amazon project",
     images: [
-      "https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg",
+      "https://images.pexels.com/photos/7533347/pexels-photo-7533347.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/2853592/pexels-photo-2853592.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1674666/pexels-photo-1674666.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600",
     ],
     types: [
       { name: "Landing page", color: "#6f6f6f", icon: "" },
@@ -63,12 +63,12 @@ const projectData = [
   {
     title: "Tesla project",
     images: [
-      "https://wallpapercave.com/wp/wp6112875.jpg",
-      "https://wallpapercave.com/wp/wp6112875.jpg",
-      "https://wallpapercave.com/wp/wp6112875.jpg",
-      "https://wallpapercave.com/wp/wp6112875.jpg",
-      "https://wallpapercave.com/wp/wp6112875.jpg",
-      "https://wallpapercave.com/wp/wp6112875.jpg",
+      "https://images.pexels.com/photos/7533347/pexels-photo-7533347.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/2853592/pexels-photo-2853592.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1674666/pexels-photo-1674666.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600",
     ],
     types: [
       { name: "Landing page", color: "#6f6f6f", icon: "" },
@@ -82,12 +82,12 @@ const projectData = [
   {
     title: "Google project",
     images: [
-      "https://images.news18.com/ibnlive/uploads/2021/09/helsinki.jpg",
-      "https://images.news18.com/ibnlive/uploads/2021/09/helsinki.jpg",
-      "https://images.news18.com/ibnlive/uploads/2021/09/helsinki.jpg",
-      "https://images.news18.com/ibnlive/uploads/2021/09/helsinki.jpg",
-      "https://images.news18.com/ibnlive/uploads/2021/09/helsinki.jpg",
-      "https://images.news18.com/ibnlive/uploads/2021/09/helsinki.jpg",
+      "https://images.pexels.com/photos/7533347/pexels-photo-7533347.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/2853592/pexels-photo-2853592.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1674666/pexels-photo-1674666.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600",
     ],
     types: [
       { name: "Landing page", color: "#6f6f6f", icon: "" },
@@ -105,12 +105,18 @@ const Sidebar = () => {
     <>
       <div className="sidebar">
         <Logo />
-        <Profile name="Hatypo Projects" role="11 members" imgUrl={profileUrl} />
-        <Menu menuItems={menuItems} />
-        <Divider />
-        <Project projectData={projectData} />
-        <Divider />
-        <Footer text="Favorites" icon="star" />
+        <div className="sidebar__scroll">
+          <Profile
+            name="Hatypo Projects"
+            role="11 members"
+            imgUrl={profileUrl}
+          />
+          <Menu menuItems={menuItems} />
+          <Divider />
+          <Project projectData={projectData} />
+          <Divider />
+          <Footer text="Favorites" icon="star" />
+        </div>
       </div>
     </>
   );

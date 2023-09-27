@@ -3,6 +3,8 @@
   grid-column: 2 / -1;
   background-color: #fafafa;
 
+  width: calc(100vw - 22rem);
+
   // Header
   &__header {
     display: flex;
@@ -176,21 +178,19 @@
         padding: 0.5rem 1rem;
         border-radius: 10px;
         cursor: pointer;
+        color: #6f6f6f;
 
         &:hover {
-          color: #4d4d4d;
-          background-color: #e8e8e8;
+          color: #000;
         }
 
         &__icon {
           font-size: 1.5rem;
-          color: #6f6f6f;
         }
 
         &__text {
           font-size: 1.2rem;
           font-weight: 500;
-          color: #6f6f6f;
         }
       }
     }
@@ -198,11 +198,12 @@
 
   // Options
   &__options {
-    padding: 1rem 2rem;
+    padding: 1rem;
+    margin-left: 1rem;
 
     &__items {
       list-style: none;
-      padding: 0;
+      padding: 0 1rem;
       margin: 0;
       display: flex;
       gap: 2rem;
@@ -214,7 +215,7 @@
         border: none;
         outline: none;
         cursor: pointer;
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 1rem;
         font-weight: 500;
         transition: 0.1s;
         font-size: 1.5rem;
@@ -231,11 +232,17 @@
   // Content
 
   &__content {
+    // display: flex;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
     height: calc(100vh - 23rem);
     padding: 1rem 2rem;
-    gap: 2rem;
+    gap: 1.5rem;
+
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     &__items {
       display: flex;
@@ -273,6 +280,8 @@
     }
 
     &__info {
+      height: 50rem;
+
       overflow-x: hidden;
       overflow-y: auto;
       scrollbar-width: none;
@@ -283,6 +292,7 @@
     }
 
     &__card {
+      // width: 28rem;
       margin: 1rem 0.5rem;
       padding: 0.5rem 0;
       background-color: #fff;
@@ -292,6 +302,11 @@
 
       &.blur {
         opacity: 0.5;
+      }
+
+      &:hover {
+        scale: 1.02;
+        cursor: pointer;
       }
 
       &__heading {
@@ -328,7 +343,7 @@
       }
 
       &__image {
-        height: 15rem;
+        height: 10rem;
         padding: 0 1rem;
         margin-bottom: 1rem;
 
@@ -405,6 +420,112 @@
               font-size: 1.2rem;
               font-weight: 500;
               color: #6f6f6f;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    &__content {
+      &__card {
+        &__image {
+          height: 9rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1080px) {
+    &__heading {
+      &__features {
+        gap: 0;
+      }
+    }
+    &__options {
+      &__items {
+        &__tablink {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    &__content {
+      &__card {
+        &__image {
+          height: 7rem;
+        }
+        &__detail {
+          gap: 0.5rem;
+
+          &__time {
+            font-size: 1.2rem;
+          }
+        }
+        &__description {
+          font-size: 1.2rem;
+        }
+        &__footer {
+          &__btns {
+            &__item {
+              &__icon {
+                font-size: 1.3rem;
+              }
+              &__text {
+                font-size: 1.1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    &__heading {
+      // Features
+      &__features {
+        gap: 0rem;
+        padding: 0;
+
+        &__feature {
+          display: flex;
+          align-items: center;
+          gap: 0.2rem;
+          padding: 0 0.8rem;
+        }
+      }
+    }
+    &__options {
+      &__items {
+        padding: 0 0.5rem;
+        &__tablink {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    &__content {
+      &__card {
+        &__image {
+          height: 7rem;
+        }
+        &__detail {
+          &__time {
+            font-size: 1rem;
+          }
+        }
+        &__description {
+          font-size: 1.1rem;
+        }
+        &__footer {
+          &__btns {
+            &__item {
+              &__icon {
+                font-size: 1.2rem;
+              }
+              &__text {
+                font-size: 1rem;
+              }
             }
           }
         }
