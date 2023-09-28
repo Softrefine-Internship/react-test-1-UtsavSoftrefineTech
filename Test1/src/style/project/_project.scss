@@ -180,6 +180,10 @@
         cursor: pointer;
         color: #6f6f6f;
 
+        &:nth-child(3) {
+          color: #000;
+        }
+
         &:hover {
           color: #000;
         }
@@ -220,11 +224,11 @@
         transition: 0.1s;
         font-size: 1.5rem;
         color: #a5a5a5;
-      }
 
-      &__tablink:hover {
-        color: black;
-        border-bottom: 2px solid black;
+        &:hover {
+          color: black;
+          border-bottom: 2px solid black;
+        }
       }
     }
   }
@@ -577,6 +581,19 @@
       }
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    &__heading {
+      padding: 0 0.5rem;
+      &__features {
+        gap: 0rem;
+        &__feature {
+          gap: 0.2rem;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 540px) {
     &__header {
       &__persons {
@@ -600,10 +617,20 @@
       &__features {
         width: 100%;
         align-items: center;
-        justify-content: space-around;
 
         &__feature {
-          gap: 0.5rem;
+          margin-right: auto;
+
+          &:first-child {
+            padding: 0 1rem 0 2rem;
+          }
+
+          &__icon {
+            font-size: 1.3rem;
+          }
+          &__text {
+            font-size: 1.1rem;
+          }
         }
       }
     }
@@ -613,6 +640,37 @@
         overflow-x: auto;
         &::-webkit-scrollbar {
           display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 366px) {
+    &__header {
+      gap: 0.5rem;
+
+      &__project {
+        gap: 0.2rem;
+      }
+
+      &__page {
+        gap: 0.2rem;
+      }
+
+      &__icon {
+        margin: 0;
+      }
+    }
+
+    &__heading {
+      &__features {
+        &__feature {
+          &__icon {
+            font-size: 1.2rem;
+          }
+          &__text {
+            font-size: 1.05rem;
+          }
         }
       }
     }

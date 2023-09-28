@@ -13,7 +13,6 @@
   &__date {
     font-size: 1.8rem;
     color: #616161;
-
     margin-right: auto;
   }
 
@@ -22,6 +21,10 @@
     position: relative;
     display: flex;
     align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &__input {
       width: 100%;
@@ -96,6 +99,35 @@
   @media only screen and (max-width: 800px) {
     &__profileName {
       padding-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 366px) {
+    &__search {
+      justify-content: center;
+      &__input {
+        height: 3.5rem;
+        width: 3.5rem;
+        padding: 0;
+        &::-webkit-input-placeholder {
+          opacity: 0;
+        }
+      }
+
+      &__icon {
+        color: #616161;
+        margin-left: 0;
+      }
+    }
+    &__iconBtn {
+      margin-left: 0.5rem;
+      height: 3rem;
+      width: 3rem;
+    }
+    &__avatar img {
+      height: 3rem;
+      width: 3rem;
+      margin-left: 0.5rem;
     }
   }
 }
