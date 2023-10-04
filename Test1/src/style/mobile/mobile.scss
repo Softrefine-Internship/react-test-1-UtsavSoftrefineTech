@@ -1,5 +1,8 @@
 .mobile {
+  height: 100vh;
+  overflow: hidden;
   position: relative;
+
   &__header {
     &__btn {
       font-size: 1.5rem;

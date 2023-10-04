@@ -233,7 +233,8 @@
     // display: flex;
     display: grid;
 
-    height: calc(100vh - 23rem);
+    // height: calc(100vh - 23rem);
+    height: 44rem;
     padding: 1rem 2rem;
     gap: 1.5rem;
 
@@ -348,7 +349,7 @@
           width: 100%;
           border-radius: 10px;
           object-fit: cover;
-          aspect-ratio: 16/9;
+          // aspect-ratio: 16/5;
         }
       }
 
@@ -547,6 +548,7 @@
       }
     }
     &__content {
+      height: 41rem;
       &__card {
         &__image {
           height: 6rem;

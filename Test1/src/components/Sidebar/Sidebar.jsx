@@ -3,7 +3,6 @@ import Logo from "./Logo/Logo";
 import Profile from "./Profile/Profile";
 import Project from "./Project/Project";
 import Divider from "./Divider/Divider";
-import Footer from "./Footer/Footer";
 import Menu from "./Menu/Menu";
 
 // Change your profile image url here
@@ -118,10 +117,7 @@ const Sidebar = ({ toggleSidebar }) => {
           />
           <Menu menuItems={menuItems} />
           <Divider />
-
           <Project projectData={projectData} />
-          <Divider />
-          <Footer text="Favorites" icon="star" />
         </div>
       </div>
     </>
