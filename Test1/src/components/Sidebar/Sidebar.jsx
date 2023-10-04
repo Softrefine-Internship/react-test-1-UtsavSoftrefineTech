@@ -4,10 +4,21 @@ import Profile from "./Profile/Profile";
 import Project from "./Project/Project";
 import Divider from "./Divider/Divider";
 import Footer from "./Footer/Footer";
+import Menu from "./Menu/Menu";
 
 // Change your profile image url here
 const profileUrl =
   "https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg";
+
+// Change your menu items here
+const menuItems = [
+  { iconName: "home-outline", text: "Home" },
+  { iconName: "archive-outline", text: "My Task" },
+  { iconName: "albums-outline", text: "Inbox" },
+  { iconName: "analytics-outline", text: "Reporting" },
+  { iconName: "clipboard-outline", text: "Portfolios" },
+  { iconName: "flag-outline", text: "Goals" },
+];
 
 // Change your project data here
 const projectData = [
@@ -105,6 +116,9 @@ const Sidebar = ({ toggleSidebar }) => {
             role="11 members"
             imgUrl={profileUrl}
           />
+          <Menu menuItems={menuItems} />
+          <Divider />
+
           <Project projectData={projectData} />
           <Divider />
           <Footer text="Favorites" icon="star" />
