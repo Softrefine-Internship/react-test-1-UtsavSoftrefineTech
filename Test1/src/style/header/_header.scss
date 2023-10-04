@@ -118,14 +118,7 @@
         margin-left: 0;
       }
     }
-    &__iconBtn {
-      margin-left: 0.5rem;
-      height: 3rem;
-      width: 3rem;
-    }
     &__avatar img {
-      height: 3rem;
-      width: 3rem;
       margin-left: 0.5rem;
     }
   }
@@ -142,5 +135,5 @@
   background-color: red;
   position: absolute;
   bottom: 0.5rem;
-  right: 1.5rem;
+  left: 2.5rem;
 }

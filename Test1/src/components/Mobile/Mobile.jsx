@@ -36,13 +36,7 @@ const MobileHeader = () => {
             <ProfileDetails name="Zhofran ardyan" />
           </div>
         </div>
-        <div
-          className={`mobile__side ${
-            isSidebarVisible ? "sidebar-visible" : "sidebar-hidden"
-          }`}
-        >
-          <Sidebar toggleSidebar={toggleSidebar} />
-        </div>
+
         <div className="mobile__heading">
           <Date date="Thursday, 18 May 2023" />
           <Search />
@@ -50,6 +44,13 @@ const MobileHeader = () => {
         <div className="mobile__main">
           <Project />
         </div>
+      </div>
+      <div
+        className={`mobile__side ${
+          isSidebarVisible ? "sidebar-visible" : "sidebar-hidden"
+        }`}
+      >
+        <Sidebar toggleSidebar={toggleSidebar} />
       </div>
     </>
   );
