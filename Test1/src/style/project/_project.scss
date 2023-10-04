@@ -6,11 +6,12 @@
 
   // Header
   &__header {
+    height: 9vh;
     display: flex;
     align-items: center;
     padding: 0 2rem;
-    margin: 1rem 0;
-    margin-bottom: 1rem;
+    // margin: 1rem 0;
+    // margin-bottom: 1rem;
     gap: 1rem;
     color: gray;
 
@@ -132,11 +133,12 @@
 
   // Heading
   &__heading {
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 2rem;
-    margin: 1rem 0;
+    // margin: 1rem 0;
     color: gray;
 
     // Time
@@ -196,8 +198,8 @@
 
   // Options
   &__options {
-    padding: 1rem;
-    margin-left: 1rem;
+    height: 7vh;
+    padding: 1rem 1rem 1rem 2rem;
 
     &__items {
       list-style: none;
@@ -233,8 +235,8 @@
     // display: flex;
     display: grid;
 
-    // height: calc(100vh - 23rem);
-    height: 44rem;
+    height: calc(100vh - 30vh);
+    // height: 68vh;
     padding: 1rem 2rem;
     gap: 1.5rem;
 
@@ -548,7 +550,6 @@
       }
     }
     &__content {
-      height: 43rem;
       &__card {
         &__image {
           height: 6rem;
@@ -607,19 +608,18 @@
     &__heading {
       flex-direction: column;
       align-items: flex-start;
-      gap: 1rem;
 
       &__features {
         width: 100%;
         align-items: center;
 
         &__feature {
-          margin-right: auto;
-
+          &:not(:first-child) {
+            margin-left: auto;
+          }
           &:first-child {
             padding: 0 1rem 0 2rem;
           }
-
           &__icon {
             font-size: 1.3rem;
           }
@@ -631,6 +631,7 @@
     }
 
     &__options {
+      margin-top: 1rem;
       &__items {
         overflow-x: auto;
         &::-webkit-scrollbar {
