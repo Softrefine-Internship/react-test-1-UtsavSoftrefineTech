@@ -25,7 +25,7 @@ const info = [
       },
       {
         status: "Medium Priority",
-        statusColor: "#EBD18F",
+        statusColor: "#DEB754",
         statusBackground: "#FFFBEF",
         title: "Careers",
         personImg:
@@ -72,7 +72,7 @@ const info = [
       },
       {
         status: "Medium Priority",
-        statusColor: "#EBD18F",
+        statusColor: "#DEB754",
         statusBackground: "#FFFBEF",
         title: "Careers",
         personImg:
@@ -121,7 +121,7 @@ const info = [
       },
       {
         status: "Medium Priority",
-        statusColor: "#EBD18F",
+        statusColor: "#DEB754",
         statusBackground: "#FFFBEF",
         title: "Careers",
         personImg:
@@ -166,7 +166,7 @@ const info = [
       },
       {
         status: "Medium Priority",
-        statusColor: "#EBD18F",
+        statusColor: "#DEB754",
         statusBackground: "#FFFBEF",
         title: "Careers",
         personImg:

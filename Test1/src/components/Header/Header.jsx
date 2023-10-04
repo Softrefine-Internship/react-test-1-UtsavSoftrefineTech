@@ -15,7 +15,10 @@ const Header = () => {
         <Date date="Thursday, 18 May 2023" />
         <Search />
         <IconBtn icon="settings-outline" />
-        <IconBtn icon="notifications-outline" />
+        <div className="alert">
+          <IconBtn icon="notifications-outline" />
+          <div className="notifications-alert"></div>
+        </div>
         <PersonAvatar img={profileImg} />
         <ProfileDetails name="Zhofran ardyan" />
       </div>

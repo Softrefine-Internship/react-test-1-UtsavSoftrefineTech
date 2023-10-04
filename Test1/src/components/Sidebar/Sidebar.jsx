@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "./Logo/Logo";
 import Profile from "./Profile/Profile";
-import Menu from "./Menu/Menu";
 import Project from "./Project/Project";
 import Divider from "./Divider/Divider";
 import Footer from "./Footer/Footer";
@@ -9,16 +8,6 @@ import Footer from "./Footer/Footer";
 // Change your profile image url here
 const profileUrl =
   "https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg";
-
-// Change your menu items here
-const menuItems = [
-  { iconName: "home-outline", text: "Home" },
-  { iconName: "archive-outline", text: "My Task" },
-  { iconName: "albums-outline", text: "Inbox" },
-  { iconName: "analytics-outline", text: "Reporting" },
-  { iconName: "clipboard-outline", text: "Portfolios" },
-  { iconName: "flag-outline", text: "Goals" },
-];
 
 // Change your project data here
 const projectData = [
@@ -33,12 +22,12 @@ const projectData = [
       "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600",
     ],
     types: [
-      { name: "Landing page", color: "#6f6f6f", icon: "" },
-      { name: "Vehicle", color: "#6f6f6f", icon: "star" },
-      { name: "Art & Culture", color: "#F5A623", icon: "lock-closed" },
-      { name: "Login/logout", color: "#F5A623", icon: "" },
-      { name: "Sustainability", color: "#9B51E0", icon: "" },
-      { name: "Innovation", color: "#4A90E2", icon: "" },
+      { name: "Landing page", color: "#91979D", icon: "" },
+      { name: "Vehicle", color: "#91979D", icon: "star" },
+      { name: "Art & Culture", color: "#F3BB1C", icon: "lock-closed" },
+      { name: "Login/logout", color: "#F3BB1C", icon: "" },
+      { name: "Sustainability", color: "#B57BFF", icon: "" },
+      { name: "Innovation", color: "#9FB3FD", icon: "" },
     ],
   },
   {
@@ -52,12 +41,12 @@ const projectData = [
       "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600",
     ],
     types: [
-      { name: "Landing page", color: "#6f6f6f", icon: "" },
-      { name: "Vehicle", color: "#6f6f6f", icon: "star" },
-      { name: "Art & Culture", color: "#F5A623", icon: "lock-closed" },
-      { name: "Login/logout", color: "#F5A623", icon: "" },
-      { name: "Sustainability", color: "#9B51E0", icon: "" },
-      { name: "Innovation", color: "#4A90E2", icon: "" },
+      { name: "Landing page", color: "#91979D", icon: "" },
+      { name: "Vehicle", color: "#91979D", icon: "star" },
+      { name: "Art & Culture", color: "#F3BB1C", icon: "lock-closed" },
+      { name: "Login/logout", color: "#F3BB1C", icon: "" },
+      { name: "Sustainability", color: "#B57BFF", icon: "" },
+      { name: "Innovation", color: "#9FB3FD", icon: "" },
     ],
   },
   {
@@ -71,12 +60,12 @@ const projectData = [
       "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600",
     ],
     types: [
-      { name: "Landing page", color: "#6f6f6f", icon: "" },
-      { name: "Vehicle", color: "#6f6f6f", icon: "star" },
-      { name: "Art & Culture", color: "#F5A623", icon: "lock-closed" },
-      { name: "Login/logout", color: "#F5A623", icon: "" },
-      { name: "Sustainability", color: "#9B51E0", icon: "" },
-      { name: "Innovation", color: "#4A90E2", icon: "" },
+      { name: "Landing page", color: "#91979D", icon: "" },
+      { name: "Vehicle", color: "#91979D", icon: "star" },
+      { name: "Art & Culture", color: "#F3BB1C", icon: "lock-closed" },
+      { name: "Login/logout", color: "#F3BB1C", icon: "" },
+      { name: "Sustainability", color: "#B57BFF", icon: "" },
+      { name: "Innovation", color: "#9FB3FD", icon: "" },
     ],
   },
   {
@@ -90,29 +79,32 @@ const projectData = [
       "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600",
     ],
     types: [
-      { name: "Landing page", color: "#6f6f6f", icon: "" },
-      { name: "Vehicle", color: "#6f6f6f", icon: "star" },
-      { name: "Art & Culture", color: "#F5A623", icon: "lock-closed" },
-      { name: "Login/logout", color: "#F5A623", icon: "" },
-      { name: "Sustainability", color: "#9B51E0", icon: "" },
-      { name: "Innovation", color: "#4A90E2", icon: "" },
+      { name: "Landing page", color: "#91979D", icon: "" },
+      { name: "Vehicle", color: "#91979D", icon: "star" },
+      { name: "Art & Culture", color: "#F3BB1C", icon: "lock-closed" },
+      { name: "Login/logout", color: "#F3BB1C", icon: "" },
+      { name: "Sustainability", color: "#B57BFF", icon: "" },
+      { name: "Innovation", color: "#9FB3FD", icon: "" },
     ],
   },
 ];
 
-const Sidebar = () => {
+const Sidebar = ({ toggleSidebar }) => {
   return (
     <>
       <div className="sidebar">
-        <Logo />
+        <div className="sidebar__header">
+          <Logo />
+          <div className="sidebar__header__close-icon" onClick={toggleSidebar}>
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+        </div>
         <div className="sidebar__scroll">
           <Profile
             name="Hatypo Projects"
             role="11 members"
             imgUrl={profileUrl}
           />
-          <Menu menuItems={menuItems} />
-          <Divider />
           <Project projectData={projectData} />
           <Divider />
           <Footer text="Favorites" icon="star" />

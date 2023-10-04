@@ -2,17 +2,20 @@ import React, { useState } from "react";
 
 const Project = (props) => {
   const { projectData } = props;
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   const toggleContent = (index) => {
-    setActiveIndex(index);
+    setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
   };
 
   return (
     <>
       {projectData.map((project, index) => (
         <div className="sidebar__project" key={index}>
-          <div className="sidebar__project__header">
+          <div
+            className="sidebar__project__header"
+            onClick={() => toggleContent(index)}
+          >
             <div className="sidebar__project__header__arrow">
               <ion-icon
                 name={
@@ -20,16 +23,12 @@ const Project = (props) => {
                     ? "chevron-down-outline"
                     : "chevron-forward"
                 }
-                onClick={() => toggleContent(index)}
               ></ion-icon>
             </div>
             <div className="sidebar__project__header__text">
               <p>{project.title}</p>
             </div>
-            <div
-              className="sidebar__project__header__icon"
-              onClick={() => toggleContent(index)}
-            >
+            <div className="sidebar__project__header__icon">
               <ion-icon name="add-outline"></ion-icon>
             </div>
           </div>

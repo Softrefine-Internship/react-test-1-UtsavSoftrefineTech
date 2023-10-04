@@ -1,7 +1,5 @@
 .header {
   grid-column: 2 / -1;
-  // background-color: rgba(0, 0, 0, 0.162);
-  background-color: #fafafa;
 
   display: flex;
   align-items: center;
@@ -14,6 +12,7 @@
     font-size: 1.8rem;
     color: #616161;
     margin-right: auto;
+    font-weight: 700;
   }
 
   // SEARCH
@@ -91,7 +90,7 @@
   &__profileName {
     margin-left: 1rem;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #363636;
     padding-right: 2rem;
   }
@@ -130,4 +129,18 @@
       margin-left: 0.5rem;
     }
   }
+}
+
+.alert {
+  position: relative;
+}
+
+.notifications-alert {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1.5rem;
 }
